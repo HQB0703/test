@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ví dụ HTML</title>
+    <title>Chọn YES hoặc NO</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Xin chào, đây là ví dụ HTML!</h1>
-    <p>Đây là một đoạn văn bản.</p>
-    <ul>
-        <li>Mục 1</li>
-        <li>Mục 2</li>
-        <li>Mục 3</li>
-    </ul>
+    <div class="background">
+        <div class="spark" id="spark1"></div>
+        <div class="spark" id="spark2"></div>
+        <div class="spark" id="spark3"></div>
+        <div class="spark" id="spark1"></div>
+        <div class="spark" id="spark2"></div>
+        <div class="spark" id="spark3"></div>
+        
+    <div>
+        <h1 class="hehe">M có thích t hong!!!!!!!!!!</h1>
+    </div>
+    <div id="yes-container" class="button-container">
+        <button id="yes-button" onclick="alert('Bạn đã chọn YES!')">Có</button>
+    </div>
+    <div id="no-container" class="button-container">
+        <button id="no-button" onclick="moveNoButton()">Không</button>
+    </div>
+
+    <div id="yes-container" class="button-container">
+        <button id="yes-button" onclick="showPopup()">Có</button>
+    </div>
+    <div id="no-container" class="button-container">
+        <button id="no-button" onclick="moveNoButton()">Không</button>
+    </div>
+    <div id="popup" class="popup">
+        <p>YEAHH!</p>
+        <p>Liên kết sẽ mở sau <span id="countdown">5</span> giây</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
